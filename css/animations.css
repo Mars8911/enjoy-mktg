@@ -1,0 +1,99 @@
+/* 淡入動畫 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 滑入動畫 */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* 縮放動畫 */
+@keyframes scale {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* 套用動畫 */
+.hero-content {
+    animation: fadeIn 1s ease-out;
+}
+
+.service-card {
+    animation: scale 0.5s ease-out;
+}
+
+.feature-item {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.project-card {
+    animation: fadeIn 1s ease-out;
+}
+
+.blog-card {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* 懸停效果 */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 平滑過渡 */
+.nav-links a,
+.btn,
+.service-card,
+.project-card,
+.blog-card {
+    transition: all 0.3s ease;
+}
+
+/* 載入動畫 */
+.loading {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+} 
