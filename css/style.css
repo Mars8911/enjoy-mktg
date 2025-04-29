@@ -366,7 +366,7 @@ img, video {
         margin: 1rem 0;
     }
     .container {
-        padding: 0 8px;
+        padding: 15 8px;
     }
     .projects-grid, .blog-grid, .services-grid {
         gap: 1rem;
